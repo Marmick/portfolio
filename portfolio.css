@@ -1,0 +1,13 @@
+* {
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+
+main {
+    display: grid;
+}
+body{
+        background-image:url(backgr.jpg);
+        background-repeat: repeat;
+    }

@@ -1,0 +1,459 @@
+* {
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+
+main {
+    display: grid;
+}
+
+/* mobile style */
+
+@media only screen and (max-width:25em){
+    
+    body{
+        background-image:url(backgr.jpg);
+        background-repeat: repeat;
+    }
+    
+    main{
+        grid-template-columns: repeat (8,1fr);
+        grid-template-areas:
+            "nav nav nav nav nav nav nav nav"
+            "he he he he he he he he"
+            "sec sec sec sec sec sec sec sec"
+            "fig1 fig1 fig1 fig1 fig1 fig1 fig1 fig1"
+            "fig2 fig2 fig2 fig2 fig2 fig2 fig2 fig2"
+            "fig3 fig3 fig3 fig3 fig3 fig3 fig3 fig3"
+            "fig4 fig4 fig4 fig4 fig4 fig4 fig4 fig4"
+            "fig5 fig5 fig5 fig5 fig5 fig5 fig5 fig5"
+            "art art art art art art art art"
+            "h2 h2 h2 h2 h2 h2 h2 h2"
+            "fig6 fig6 fig6 fig6 fig6 fig6 fig6 fig6"
+            "fig7 fig7 fig7 fig7 fig7 fig7 fig7 fig7"
+            "fig8 fig8 fig8 fig8 fig8 fig8 fig8 fig8"
+            "fig9 fig9 fig9 fig9 fig9 fig9 fig9 fig9 "
+    }
+    
+    nav li {
+        grid-column: 4/8;
+        display: inline;
+    }
+    
+    nav ul{
+        padding-top: 40px;
+    }
+    
+    nav{
+        height:95%;
+        grid-area: nav;
+        background-color: #F8D6C3;
+        font-family: "Bodoni MT";
+        font-size: 22px;
+    }
+    
+    li a:hover {
+        background-color:#BDAC65;
+        color: black;
+    }  
+ 
+    nav a:link{
+        text-decoration:none;
+        color:black;
+    }
+    
+    img{
+        float:left;
+        padding: 5px;
+    }
+    
+    header{
+        grid-area: he;
+        grid-column: 2/-1;
+        background-color: #F8D6C3;
+        border-radius: 25px;
+        font-size:50px;
+        text-align: center;
+        margin-top: 30px;
+        font-family: "Bernard MT Condensed";
+    }
+    
+    section{
+        grid-area: sec;
+        grid-column: 1/-1;
+        text-align: center;
+        font-size: 25px;
+        font-family: "Bodoni MT";
+        background-color: #F8D6C3;
+        border-radius: 25px;
+        margin-top: 30px;
+        
+    }
+    
+    section a:link{
+        color:darkslategrey;
+    }
+    
+    section a:hover{
+        background-color:#BDAC65;
+        color: black;
+    }
+    
+    
+    figcaption{
+        background-color:#F8D6C3;
+        border-radius: 25px;
+        text-align: center;
+        font-size: 30px;
+        font-family: "Bernard MT Condensed";
+    }
+    
+    figure1{
+        grid-area: fig1;
+        grid-column: 2/8;
+        margin-top: 30px;
+    }
+    
+    figure1 img{
+        border-radius: 25px;
+    }
+    
+    
+    figure2{
+        grid-area: fig2;
+        grid-column: 3/7;
+        margin-top: 30px;
+    }
+    
+    figure2 img{
+        border-radius: 25px;
+    }
+    
+    figure3{
+        grid-area: fig3;
+        grid-column: 3/7;
+        margin-top: 30px;
+    }
+    
+    figure3 img{
+        border-radius: 25px;
+    }
+    
+    figure4{
+        grid-area: fig4;
+        grid-column: 3/7;
+        margin-top: 30px;
+    }
+    
+    figure4 img{
+        border-radius: 25px;
+    }
+    
+    figure5{
+        grid-area: fig5;
+        grid-column: 3/7;
+        margin-top: 30px;
+    }
+    
+    figure5 img{
+        border-radius: 25px;
+    }
+    
+    article{
+        grid-area: art;
+        grid-column: 3/7;
+        background-color:#F8D6C3;
+        font-family: "Bookman Old Style";
+        text-align: center;
+        margin-top: 30px;
+        border-radius: 25px;
+    }
+    
+    h2{
+        grid-area: h2;
+        margin-top: 30px;
+        font-size: 30px;
+        text-align: center;
+        font-family: "Bernard MT Condensed";
+        background-color: #F8D6C3;
+        border-radius: 25px;
+    }
+    
+    figure6{
+        grid-area: fig6;
+        grid-column: 2/8;
+        margin-top: 30px;
+    }
+    
+    figcaption2{
+        margin-top: 20%;
+        font-size: 20px;
+        background-color: #F8D6C3;
+        font-family: "Bodoni MT";
+    }
+    
+    figure6 img{
+        border-radius: 25px;
+    }
+    
+    figure7{
+        grid-area: fig7;
+        grid-column: 2/8;
+        margin-top: 30px;
+    }
+    
+    figure7 img{
+        border-radius: 25px;
+    }
+    
+    figure8{
+        grid-area: fig8;
+        grid-column: 2/8;
+        margin-top: 30px;
+    }
+    
+    figure8 img{
+        border-radius: 25px;
+    }
+    
+    figure9{
+        grid-area: fig9;
+        grid-column: 2/8;
+        margin-top: 30px;
+    }
+    
+    figure9 img{
+        border-radius: 25px;
+    }
+   
+}
+    
+
+/* desktop style */
+
+@media only screen and (min-width:25em){
+    
+    body{
+        background-image:url(backgr.jpg);
+        background-repeat: repeat;
+    }
+    
+    main{
+        grid-template-columns: repeat (8,1fr);
+        grid-template-areas:
+            "nav nav nav nav nav nav nav nav"
+            "he he he he he he he he"
+            "sec sec sec sec sec sec sec sec"
+            "fig1 fig1 fig1 fig1 fig1 fig1 fig1 fig1"
+            "fig2 fig2 fig2 fig2 fig2 fig2 fig2 fig2"
+            "fig3 fig3 fig3 fig3 fig3 fig3 fig3 fig3"
+            "fig4 fig4 fig4 fig4 fig4 fig4 fig4 fig4"
+            "fig5 fig5 fig5 fig5 fig5 fig5 fig5 fig5"
+            "art art art art art art art art"
+            "h2 h2 h2 h2 h2 h2 h2 h2"
+            "fig6 fig6 fig6 fig6 fig6 fig6 fig6 fig6"
+            "fig7 fig7 fig7 fig7 fig7 fig7 fig7 fig7"
+            "fig8 fig8 fig8 fig8 fig8 fig8 fig8 fig8"
+            "fig9 fig9 fig9 fig9 fig9 fig9 fig9 fig9 "
+    }
+    
+    nav li {
+        grid-column: 4/8;
+        display: inline;
+    }
+    
+    nav ul{
+        padding-top: 40px;
+    }
+    
+    nav{
+        height:95%;
+        grid-area: nav;
+        background-color: #F8D6C3;
+        font-family: "Bodoni MT";
+        font-size: 22px;
+    }
+    
+    li a:hover {
+        background-color:#BDAC65;
+        color: black;
+    }  
+ 
+    nav a:link{
+        text-decoration:none;
+        color:black;
+    }
+    
+    img{
+        float:left;
+        padding: 5px;
+    }
+    
+    header{
+        grid-area: he;
+        grid-column: 3/7;
+        background-color: #F8D6C3;
+        border-radius: 25px;
+        font-size:50px;
+        text-align: center;
+        margin-top: 30px;
+        font-family: "Bernard MT Condensed";
+    }
+    
+    section{
+        grid-area: sec;
+        grid-column: 3/7;
+        text-align: center;
+        font-size: 25px;
+        font-family: "Bodoni MT";
+        background-color: #F8D6C3;
+        border-radius: 25px;
+        margin-top: 30px;
+        
+    }
+    
+    section a:link{
+        color:darkslategrey;
+    }
+    
+    section a:hover{
+        background-color:#BDAC65;
+        color: black;
+    }
+    
+    
+    figcaption{
+        background-color:#F8D6C3;
+        border-radius: 25px;
+        text-align: center;
+        font-size: 30px;
+        font-family: "Bernard MT Condensed";
+    }
+    
+    figure1{
+        grid-area: fig1;
+        margin: 0 auto;
+        width:50%;
+        margin-top: 30px;
+    }
+    
+    figure1 img{
+        border-radius: 25px;
+    }
+    
+    
+    figure2{
+        grid-area: fig2;
+        grid-column: 4/6;
+        margin-top: 30px;
+    }
+    
+    figure2 img{
+        border-radius: 25px;
+    }
+    
+    figure3{
+        grid-area: fig3;
+        grid-column: 4/6;
+        margin-top: 30px;
+    }
+    
+    figure3 img{
+        border-radius: 25px;
+    }
+    
+    figure4{
+        grid-area: fig4;
+        grid-column: 4/6;
+        margin-top: 30px;
+    }
+    
+    figure4 img{
+        border-radius: 25px;
+    }
+    
+    figure5{
+        grid-area: fig5;
+        width: 50%;
+        margin: 0 auto;
+        margin-top: 30px;
+    }
+    
+    figure5 img{
+        border-radius: 25px;
+    }
+    
+    article{
+        grid-area: art;
+        grid-column: 3/7;
+        background-color:#F8D6C3;
+        font-family: "Bookman Old Style";
+        font-size: 25px;
+        text-align: center;
+        margin-top: 30px;
+        border-radius: 25px;
+    }
+    
+    h2{
+        grid-area: h2;
+        grid-column: 3/7;
+        margin-top: 30px;
+        font-size: 40px;
+        text-align: center;
+        font-family: "Bernard MT Condensed";
+        background-color: #F8D6C3;
+        border-radius: 25px;
+    }
+    
+    figure6{
+        grid-area: fig6;
+        grid-column: 2/8;
+        margin-top: 30px;
+    }
+    
+    figcaption2{
+        margin-top: 40%;
+        font-size: 30px;
+        background-color: #F8D6C3;
+        font-family: "Bodoni MT";
+    }
+    
+    figure6 img{
+        border-radius: 25px;
+    }
+    
+    figure7{
+        grid-area: fig7;
+        grid-column: 2/8;
+        margin-top: 30px;
+    }
+    
+    figure7 img{
+        border-radius: 25px;
+    }
+    
+    figure8{
+        grid-area: fig8;
+        grid-column: 2/8;
+        margin-top: 30px;
+    }
+    
+    figure8 img{
+        border-radius: 25px;
+    }
+    
+    figure9{
+        grid-area: fig9;
+        grid-column: 2/8;
+        margin-top: 30px;
+    }
+    
+    figure9 img{
+        border-radius: 25px;
+    }
+   
+}
+    
+
+  

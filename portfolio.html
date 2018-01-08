@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="design.css" type="text/css">    
+        <title> Portfolio </title>
+
+        <style>
+            .parent{
+                border-radius: 20px;
+                margin-top: 15px;
+                margin-right: 250px;
+                margin-left: 250px;
+                padding: 20px;
+                background-color: #F8D6C3;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .heading{
+                margin-top: 20px;
+                font-size: 40px;
+                font-family: "Bernard MT Condensed";
+                font-weight: bold;
+            }
+            a{
+                text-decoration: none;
+                color: #55666e;
+                padding-top: 20px
+            }
+            a:hover{
+                color: #4c413f;
+            }
+            .links{
+                border: solid 2px black;
+                padding: 20px;
+
+            }
+            img:hover{
+                transform: scale(1.05,1.05);
+                opacity: 0.8;
+            }
+            .parent img{
+                width: 500px;
+            }
+            
+            @media (max-width:1100px){
+                .parent img{
+                    width:400px;
+                }
+                .heading{
+                    font-size: 25px;
+                }
+                .parent{
+                    width: 400px
+                }
+            }
+
+        </style>
+
+    </head>
+
+    <body>
+
+        <nav>
+
+            <img src="otterik.png" alt="Logo" style="width: 5em">
+
+            <ul style="list-style:none">
+
+                <li> <a href="../Index/index2.html"> Index </a> </li>
+                <li> <a href="../Art/art.html"> Art Nouveau</a></li>
+                <li> <a href="../about/about.html"> About me </a></li>
+                <li> <a href="../Design/design.html"> Design </a></li>
+
+            </ul>
+
+        </nav>
+
+        <div class="parent">
+            <div class="heading">Redesigned website</div>
+            <a href="http://marmik.one/martyrsbay/" target="_blank"><img src="martyrs_bay.jpg" alt="" class="resp"></a>
+            <div class="heading links"><a href="presentation.pdf">Presentation</a></div>
+        </div>
+
+        <div class="parent">
+            <div class="heading">Simple animation</div>
+            <a href="http://marmik.one/simple_animation/exc2.html" target="_blank"><img src="deadpool1.jpg" alt=""></a>
+        </div>
+
+        <div class="parent">
+            <div class="heading">Interactive animation</div>
+            <a href="http://marmik.one/interactive_final/animation_1.html" target="_blank"><img src="animation.jpg" alt=""></a>
+        </div>
+
+        <div class="parent">
+            <div class="heading">The Artist</div>
+            <a href="http://marmik.one/the_artist/New_folder/first-page.html" target="_blank"><img src="artist1.jpg" alt=""></a>
+            <div class="heading links"><a href="http://www.marmik.one/the_artist/personas_group5.png" target="_blank">Personas Collage</a></div>
+            <div class="heading links"><a href="http://www.marmik.one/the_artist/storyboard_artist.pdf" target="_blank">Storyboard</a></div>
+            <div class="heading links"><a href="http://www.marmik.one/the_artist/test_artist.pdf" target="_blank">Expert Test</a></div>
+        </div>
+
+        <div class="parent">
+            <div class="heading">Cook4Me</div>
+            <a href="http://musea.one/cook/intro.html" target="_blank"><img src="cook_for_me.jpg" alt=""></a>
+            <div class="heading links"><a href="http://www.marmik.one/cook4me/canvas.jpg" target="_blank">Canvas</a></div>
+            <div class="heading links"><a href="http://www.marmik.one/cook4me/cook_report.pdf" target="_blank">Report</a></div>
+            <div class="heading links"><a href="http://www.marmik.one/cook4me/design.pdf" target="_blank">Design Documentation</a></div>
+            <div class="heading links"><a href="http://www.marmik.one/cook4me/cook_presentation.pdf" target="_blank">Presentation</a></div>
+        </div>
+
+        <div class="parent">
+            <div class="heading">City Nights Copenhagen</div>
+            <a href="http://marmik.one/city_nights/city_nights.mp4" target="_blank"><img src="citynights.png" alt=""></a>
+        </div>
+
+        <div class="parent">
+            <div class="heading">Dorm Life in Copenhagen</div>
+            <a href="http://marmik.one/dorm/index.html" target="_blank"><img src="video1.jpg" alt=""></a>
+            <div class="heading links"><a href="http://www.marmik.one/city_nights/storyboard_dorm.pdf" target="_blank">Storyboard</a></div>
+        </div>
+    </body>
+</html>
